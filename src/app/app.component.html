@@ -1,0 +1,14 @@
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="">Auth</a>
+    </div>
+    <ul class="nav navbar-nav navbar-right">
+      <li *ngIf="isAuthenticated"><a (click)="onLogout()"><span class="glyphicon glyphicon-log-in"></span> Logout</a></li>
+    </ul>
+  </div>
+</nav>
+<div class="container">
+  <br>
+  <router-outlet></router-outlet>
+</div>
